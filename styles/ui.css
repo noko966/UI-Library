@@ -1,0 +1,53 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bodyBg);
+    color: var(--bodyTxt);
+}
+
+/*Layouts*/
+.dg_layout_sidebar{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+/*Sidebar Item start ------------------------------------*/
+.dg_sidebar_item{
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 16px;
+    background-color: var(--eventBg);
+    color: var(--eventTxt2);
+    border-top: 1px solid var(--eventBgHover);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.dg_sidebar_item:hover{
+    background-color: var(--eventBgHover);
+}
+
+.dg_sidebar_item > span {
+    padding: 0 6px;
+    text-transform: capitalize;
+    flex-grow: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--eventTxt);
+}
+
+.dg_sidebar_sub_item{
+    background-color: var(--eventBg2);
+    color: var(--eventTxt2);
+}
+
+.dg_sidebar_sub_item:hover{
+    background-color: var(--eventBg2Hover);
+}
+
+/*Sidebar Item end  ------------------------------------*/
