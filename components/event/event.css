@@ -1,0 +1,64 @@
+/*Event Widget start  ------------------------------------*/
+.dg_event_widget_header {
+  display: flex;
+  align-items: center;
+}
+.dg_event_widget_tabs_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.dg_event_widget_root {
+  /* background-color: cyan; */
+}
+.dg_event_widget_heading {
+  flex-grow: 1;
+}
+.dg_event_widget_tab {
+  appearance: none;
+  border: 0;
+  height: 44px;
+  padding: 0 12px;
+  background-color: var(--tabBg);
+  color: var(--tabTxt2);
+  cursor: pointer;
+}
+.dg_event_widget_tab_active {
+  background-color: var(--tabActiveBg);
+  color: var(--tabActiveTxt);
+}
+.dg_event_widget_collapse {
+  display: flex;
+  align-items: center;
+  border: 0;
+  height: 44px;
+  padding: 0 12px;
+  background-color: var(--headerBg);
+  color: var(--headerTxt2);
+}
+.dg_event_widget_collapse > span {
+  padding: 0 6px;
+  text-transform: capitalize;
+  flex-grow: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--headerTxt);
+}
+.dg_event_widget_event_legent {
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 56px);
+  height: 32px;
+  padding: 0 12px;
+  background-color: var(--subHeaderBg);
+  color: var(--subHeaderTxt2);
+  align-items: center;
+}
+.dg_event_widget_event_items {
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 56px);
+  height: 56px;
+  padding: 0 12px;
+  background-color: var(--eventBg);
+  color: var(--eventTxt2);
+}
